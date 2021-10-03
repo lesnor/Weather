@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/weather/static/css/main.25f5bafa.chunk.css",
+    "main.js": "/weather/static/js/main.0a8e3b68.chunk.js",
+    "main.js.map": "/weather/static/js/main.0a8e3b68.chunk.js.map",
+    "runtime-main.js": "/weather/static/js/runtime-main.99d0cb63.js",
+    "runtime-main.js.map": "/weather/static/js/runtime-main.99d0cb63.js.map",
+    "static/js/2.cfa2242f.chunk.js": "/weather/static/js/2.cfa2242f.chunk.js",
+    "static/js/2.cfa2242f.chunk.js.map": "/weather/static/js/2.cfa2242f.chunk.js.map",
+    "index.html": "/weather/index.html",
+    "static/css/main.25f5bafa.chunk.css.map": "/weather/static/css/main.25f5bafa.chunk.css.map",
+    "static/js/2.cfa2242f.chunk.js.LICENSE.txt": "/weather/static/js/2.cfa2242f.chunk.js.LICENSE.txt",
+    "static/media/stylesheet.css": "/weather/static/media/ProximaNovaT-Thin.a96ccdb7.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99d0cb63.js",
+    "static/js/2.cfa2242f.chunk.js",
+    "static/css/main.25f5bafa.chunk.css",
+    "static/js/main.0a8e3b68.chunk.js"
+  ]
+}
