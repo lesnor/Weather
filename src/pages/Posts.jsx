@@ -7,10 +7,6 @@ import Card from '../components/Card/Card';
 import { getCityWeather, removeCityFromList } from '../store/actions/actions';
 
 function Posts({ getCityWeather, cities, removeCityFromList }) {
-  const [weathers, setWeathers] = useState([]);
-  const [isShowCard, setShowCard] = useState(false);
-  const [isShowCity, setShowCity] = useState();
-
   const fetchWeather = (name) => {
     getCityWeather(name);
   };
@@ -32,9 +28,6 @@ function Posts({ getCityWeather, cities, removeCityFromList }) {
                 handleRemoveCity={removeCityFromList}
                 cityInfo={city}
                 setWeather={fetchWeather}
-                weathers={weathers}
-                isShowCard={isShowCard}
-                isShowCity={isShowCity}
               />
             </div>
           );
