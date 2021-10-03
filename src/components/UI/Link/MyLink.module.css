@@ -1,0 +1,16 @@
+.myLink {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  margin-right: 30px;
+  font-family: 'Proxima Nova Rg';
+
+  font-style: normal;
+  color: black;
+  transition: 0.4s;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+.myLink:hover {
+  border-color: black;
+}

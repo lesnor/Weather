@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Proxima Nova Lt';
+}
+
+.container {
+  width: 100%;
+  max-width: 96vw;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-image: linear-gradient(135deg, #f5cbff 10%, #c346c2 100%);
+  height: 44vh;
+  padding-left: 3vw;
+}
+.header > h1 {
+  font-size: 8vh;
+  padding-top: 2vh;
+}
+.header > h1 > span {
+  background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
+  padding: 0px 0.9vw;
+  border-radius: 0.7vw;
+}
+.header > h2 {
+  letter-spacing: 0.1vw;
+  font-size: 14vh;
+  padding-top: 9vh;
+}
+.card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 11px;
+}
+.sinoptik {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+.sinoptik__result {
+  padding: 10px 0px 30px 0px;
+  font-size: 16px;
+}
+.sinoptik__content {
+  display: flex;
+  justify-content: space-between;
+}
+.sinoptik__info {
+  display: flex;
+}
+
+.warmly-form {
+  border: 2px solid #f5f500;
+  background-color: rgba(244, 245, 147, 0.2);
+  /* background: url(https://cdn.pixabay.com/photo/2018/02/03/08/00/background-3127102_960_720.jpg); */
+}
+.hot-form {
+  border: 2px solid #c40001;
+  background-color: rgba(236, 5, 5, 0.2);
+}
+.cold-form {
+  border: 2px solid #3b38ee;
+  background-color: rgba(122, 238, 238, 0.2);
+}
+img {
+  width: 125px;
+  height: 125px;
+  margin: 0 8px 0 8px;
+}
+.sinoptik__refresh-button {
+  width: 125px;
+  font-size: 12px;
+  padding: 3px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border-radius: 6px;
+  font-family: 'Proxima Nova Lt';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  background-size: 200% auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.warmly-button {
+  background-image: linear-gradient(
+    to left,
+    #f5ed55 0%,
+    #f5800c 61%,
+    #f5ed55 100%
+  );
+}
+.cold-button {
+  background-image: linear-gradient(
+    to left,
+    #b069ee 0%,
+    #4830f0 61%,
+    #b069ee 100%
+  );
+}
+.hot-button {
+  background-image: linear-gradient(
+    to left,
+    #f5800c 0%,
+    #f50021 61%,
+    #f5800c 100%
+  );
+}
+.sinoptik__refresh-button:hover {
+  background-position: right center;
+}
+.sinoptik__close {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.sinoptik__close:hover {
+  opacity: 1;
+}
+.sinoptik__close:before,
+.sinoptik__close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.sinoptik__close:before {
+  transform: rotate(45deg);
+}
+.sinoptik__close:after {
+  transform: rotate(-45deg);
+}
+.cityInfo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  font-size: 24px;
+  line-height: 70px;
+}
+.CityInfoBody {
+  height: 100vh;
+  width: 100%;
+}
+.CityInfoBodyRain {
+  background: url(https://avatanplus.com/files/resources/original/5c4deadb5c9af168905d68f3.png);
+}
+.CityInfoBodyThunderstorm {
+  background: url(https://png2.cleanpng.com/sh/c83d8dced768dac877eb674e0694e559/L0KzQYi4UsA4N2o3S5GAYUK8R7TpgvFnaZM6TpC8OEC2Q4a4UcE2OWM7Tqo8NEe6QYq9TwBvbz==/5a297cbbafab56.3803351115126683477196.png);
+}
+.CityInfoBodyClear {
+  background: url(https://png2.cleanpng.com/sh/640224e1ce48c4725bdea678d7a4ec7b/L0KzQYi4UsE6N5dse5GAYUO8crS9WfU1QWJmSpC9MUG6R4G6VcE2OWQ8S6U7MkW8Q4e5WcU0PV91htk=/5a39bc69e491a2.41177035151373322593629535.png);
+}
+.CityInfoBodySnow {
+  background: url(https://png2.cleanpng.com/sh/d14c3fd5c5653f48adddc822ff5611c7/L0KzQYm3UsI2N5pvj5H0aYP2gLBuTfJtfZYyi9D4d3bvcbzsTfJtfZYyi9D4d3bvcbzsTfJia5xsitHAbnSwRbKCU8NlOpc4edcBMkaxSIG7VMAzPmE2TaMENUm7SIq8UsQyO191htk=/kisspng-blue-snowflake-blue-snowflake-background-5a933d2f3ae626.8044026015195988952413.png);
+}
+.CityInfoBodyDrizzle {
+  background: url(https://png2.cleanpng.com/sh/e101b99a661897fbef221598d5b7ef57/L0KzQYi4UsA4N2U9T5GAYUK8c4LpUBU1bmk5SZCDOUazR4O7WME2OWM7UKg5MEO8Q4iCTwBvbz==/5a29c1b3e4f841.8960724815126860039379.png);
+}
+
+.CityInfoBodyClouds {
+  background: url(https://png2.cleanpng.com/sh/cfbbb96ea7b4f76426da4313f05bbdf9/L0KzQYm3U8I5N6Z8iZH0aYP2gLBuTfFqeqFxedDuLYnyhcX8gvUuaZ0yetNxaXGwfbF6kgVmNZRxgeI2YYL3PbTzjCVle146edRrNES8c4HsUMJiOF85Sas6NkG3QYK8UsIzOmM3S6g5NUe3PsH1h5==/kisspng-airplane-youtube-al-bahia-mosque-clip-art-clouds-5abb449c0e02a0.4191614115222222360574.png);
+}
+
+.CityInfoBodyFog {
+  background: url(https://png2.cleanpng.com/sh/94b2753fb09f66992f8c53241d40a1ed/L0KzQYm3U8A0N6NsfZH0aYP2gLBuTgdpcaVqReJqdITogrA0gvVifaVufud1LXbsfra0jfl0fKoyhdHAboTkebA0kPVic6QyTdMEYkS4QbWAVMI0amozUac6N0S3QYa4VcIxOWM6SqM8NEe4R3B3jvc=/kisspng-white-pattern-beautiful-fine-misty-mountain-peaks-5a9b451d7423b9.9517441515201252134757.png);
+}
+.sinoptikClear {
+  background: url(https://thumbs.gfycat.com/FelineHilariousBlacknorwegianelkhound-size_restricted.gif);
+}

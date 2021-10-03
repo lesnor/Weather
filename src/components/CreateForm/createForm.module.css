@@ -1,0 +1,37 @@
+.Createform {
+  display: flex;
+  margin: 30px 0;
+  border-radius: 2px;
+}
+
+.Createform > input {
+  width: 65vw;
+  font-family: 'Proxima Nova Lt';
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+.Createform > button {
+  width: 200px;
+  margin-left: 15vw;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+
+  font-family: 'Proxima Nova Lt';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to left,
+    #b069ee 0%,
+    #4830f0 61%,
+    #b069ee 100%
+  );
+  background-size: 200% auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Createform > button:hover {
+  background-position: right center;
+}
